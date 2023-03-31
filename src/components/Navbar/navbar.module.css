@@ -1,0 +1,15 @@
+.container {
+    @apply absolute w-full p-12;
+}
+
+.content {
+    @apply flex justify-between items-center;
+}
+
+.menu {
+    @apply flex gap-32;
+}
+
+.menu li {
+    @apply uppercase font-montserrat font-bold;
+}
