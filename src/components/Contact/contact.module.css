@@ -1,0 +1,15 @@
+.container{
+    @apply py-16;
+}
+
+.content {
+  @apply font-montserrat text-[#5A5A5A] font-bold text-center;
+}
+
+.content h1 {
+  @apply text-[51px];
+}
+
+.content h3 {
+  @apply text-[24px];
+}

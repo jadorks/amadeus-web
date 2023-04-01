@@ -1,0 +1,23 @@
+.container {
+  @apply pt-64 pb-32;
+  background: url("/hero_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  @apply flex flex-col items-center gap-2;
+  @apply text-center font-montserrat font-bold;
+}
+
+.content h1 {
+  @apply text-[51px];
+}
+
+.content p {
+  @apply text-[#5A5A5A] text-[25px] mb-4;
+}
+
+.content button {
+  @apply bg-[#FF2879] px-4 uppercase;
+}

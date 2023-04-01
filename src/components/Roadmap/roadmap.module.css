@@ -1,0 +1,104 @@
+.container {
+  @apply pt-96 pb-32 min-h-screen;
+  background: url("/roadmap_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  @apply flex flex-col items-center gap-2;
+
+}
+
+.mission {
+  @apply text-center font-montserrat font-bold;
+}
+
+.mission h1 {
+  @apply text-[51px] mb-2;
+}
+
+.mission p {
+  @apply mb-6;
+}
+
+.roadmap {
+  @apply bg-[#FF2879] py-16 px-64 rounded-[85px];
+  z-index: 1;
+}
+
+.roadmap__wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.roadmap__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.roadmap__container_left .roadmap__item {
+  @apply text-right;
+}
+
+.roadmap__container_right,
+.roadmap__container_left {
+  @apply px-6;
+  position: relative;
+}
+
+.roadmap__container_right::after,
+.roadmap__container_left::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.roadmap__container_left {
+  left: -200px;
+}
+
+.roadmap__container_right {
+  left: 200px;
+}
+
+.roadmap__container_right::after {
+  left: -16px;
+}
+
+.roadmap__item {
+  @apply font-montserrat;
+}
+
+.roadmap__item h3 {
+  @apply font-black mb-2;
+}
+
+.roadmap__item ul li {
+  @apply font-bold;
+}
+
+.contact {
+  @apply font-montserrat text-[#5A5A5A] font-bold text-center;
+}
+
+.contact h1 {
+  @apply text-[51px];
+}
+
+.contact h3 {
+  @apply text-[24px];
+}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.css";
 
@@ -10,10 +11,10 @@ export default function Navbar() {
         </div>
         <div>
           <ul className={styles.menu}>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Roadmap</li>
-            <li>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
