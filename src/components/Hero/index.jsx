@@ -11,7 +11,7 @@ export default function Hero() {
           <br /> musical composition
         </h1>
         <p>with our text-to-music AI Desktop DApp</p>
-        <button>Contact</button>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   );

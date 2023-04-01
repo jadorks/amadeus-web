@@ -1,5 +1,5 @@
 .container {
-  @apply w-full py-8 px-12;
+  @apply w-full py-4 px-4 sm:py-8 sm:px-12;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -17,9 +17,13 @@
 }
 
 .menu {
-  @apply flex gap-32;
+  @apply flex gap-16 lg:gap-32;
 }
 
 .menu li {
   @apply uppercase font-montserrat font-bold;
+}
+
+.mobile__menu {
+    @apply block md:hidden uppercase font-montserrat font-bold;
 }
