@@ -1,15 +1,25 @@
 .container {
-    @apply absolute w-full py-8 px-12;
+  @apply w-full py-8 px-12;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all .2s ease-in;
+}
+
+.sticky {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
 }
 
 .content {
-    @apply flex justify-between items-center;
+  @apply flex justify-between items-center;
 }
 
 .menu {
-    @apply flex gap-32;
+  @apply flex gap-32;
 }
 
 .menu li {
-    @apply uppercase font-montserrat font-bold;
+  @apply uppercase font-montserrat font-bold;
 }

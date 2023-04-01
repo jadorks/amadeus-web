@@ -72,6 +72,36 @@ export default function Roadmap() {
               </div>
             </div>
           </div>
+          <div className={styles.roadmap__wrapper_mobile}>
+            <div className={styles.roadmap__item_mobile}>
+              <h3>LAUNCH</h3>
+              <ul>
+                <li>Concept Devlopment</li>
+                <li>Influencer Marketing Campaign</li>
+                <li>Technical Documentation</li>
+                <li>Community Establishment</li>
+              </ul>
+            </div>
+            <div className={styles.roadmap__item_mobile}>
+              <h3>PHASE 2</h3>
+              <ul>
+                <li>Beta Release Web App</li>
+              </ul>
+            </div>
+            <div className={styles.roadmap__item_mobile}>
+              <h3>PHASE 3</h3>
+              <ul>
+                <li>Alpha Release of web app</li>
+              </ul>
+            </div>
+            <div className={styles.roadmap__item_mobile}>
+              <h3>PHASE 4</h3>
+              <ul>
+                <li>Alpha mobile app</li>
+                <li>Alpha telegram bot</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

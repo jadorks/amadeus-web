@@ -1,13 +1,14 @@
 .container {
-  @apply pt-96 pb-32 min-h-screen;
-  background: url("/roadmap_bg.png");
+  @apply pt-96 pb-32;
+  background-image: url("/roadmap_bg.png");
+  background-color: rgba(0, 0, 0, 0.01);
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .content {
   @apply flex flex-col items-center gap-2;
-
 }
 
 .mission {
@@ -23,14 +24,28 @@
 }
 
 .roadmap {
-  @apply bg-[#FF2879] py-16 px-64 rounded-[85px];
+  @apply bg-[#FF2879] py-16 flex flex-col items-center rounded-[85px];
   z-index: 1;
 }
 
 .roadmap__wrapper {
+  @apply hidden lg:block mx-56;
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+}
+
+.roadmap__wrapper_mobile {
+  @apply lg:hidden relative mx-32 flex flex-col gap-6;
+}
+
+.roadmap__wrapper_mobile::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  right: 100%;
 }
 
 .roadmap__wrapper::after {
@@ -79,15 +94,34 @@
   left: -16px;
 }
 
-.roadmap__item {
+.roadmap__item_mobile {
+  @apply relative mx-10 px-4;
+}
+
+.roadmap__item_mobile::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  top: 15px;
+  right: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.roadmap__item,
+.roadmap__item_mobile {
   @apply font-montserrat;
 }
 
-.roadmap__item h3 {
+.roadmap__item h3,
+.roadmap__item_mobile h3 {
   @apply font-black mb-2;
 }
 
-.roadmap__item ul li {
+.roadmap__item ul li,
+.roadmap__item_mobile ul li {
   @apply font-bold;
 }
 
