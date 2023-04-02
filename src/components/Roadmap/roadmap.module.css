@@ -1,6 +1,6 @@
 .container {
   @apply pt-96 pb-32;
-  background-image: url("/roadmap_bg.png");
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(255,255,255,1) 100%), url("/roadmap_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,7 +120,7 @@
 
 .roadmap__item ul li,
 .roadmap__item_mobile ul li {
-  @apply font-bold;
+  @apply font-bold list-disc lg:list-none;
 }
 
 .contact {

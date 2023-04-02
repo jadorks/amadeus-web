@@ -14,14 +14,14 @@ export default function Roadmap() {
             we are redefining the way <br />
             music is created, experienced and licensed.
           </p>
-          <p>
+          <p id="roadmap">
             From streamers to filmmakers to app builders, we've made it easier
             than ever for content <br />
             creators of all kinds to license custom, high-quality, royalty-free
             music.
           </p>
         </div>
-        <div id="roadmap" className={styles.roadmap}>
+        <div className={styles.roadmap}>
           <h1 className="font-montserrat text-[51px] font-bold mb-10">
             Roadmap
           </h1>
