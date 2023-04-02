@@ -27,12 +27,14 @@ export default function Navbar() {
     <div className={`${styles.container} ${scrolled && styles.sticky}`}>
       <div className={styles.content}>
         <div className={styles.nav__logo}>
-          <img src="/amadeus_logo.png" alt="logo" />
+          <a href="">
+            <img src="/amadeus_logo.png" alt="logo" />
+          </a>
         </div>
         <div className="hidden md:block">
           <ul className={styles.menu}>
             <li>
-              <a href="#home">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li>
               <a href="#about">About Us</a>
