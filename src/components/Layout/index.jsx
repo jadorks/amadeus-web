@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Amodeus</title>
+        <title>Amadeus</title>
 
         <link
           rel="apple-touch-icon"
